@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Liked">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Yoqtirganlar"
+        app:titleTextColor="@color/white"
+        android:background="@color/blue" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:listitem="@layout/rv_item"
+        android:clickable="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:focusable="true" />
+
+
+</LinearLayout>

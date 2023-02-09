@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Home">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Yo'l belgilari"
+            app:menu="@menu/toolbar_home_menu"
+            app:titleTextColor="@color/white"
+            android:background="@color/blue" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/my_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicator="@null"
+            app:tabBackground="@drawable/tab_back"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabTextColor="@color/white"
+            app:tabTextAppearance="@style/MyCustomTextAppearance"
+
+            app:tabMode="auto"
+            app:tabPadding="10dp"
+            android:background="@color/blue" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/my_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
